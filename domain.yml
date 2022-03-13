@@ -1,0 +1,146 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- quiero_info_telemedicina
+- fuera_del_padron
+- que_obras_sociales
+- quiero_agendar_un_turno
+- otra_duda
+- intro
+- metodos_de_pago
+- me_ausento
+- goodbye
+- nlu_fallback
+- greet
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+responses:
+  utter_intro:
+  - text: |-
+      ✋ Hola! Usted se comunicó con Telemedicina Basa 👩‍⚕️. 
+
+      🤖 Utilizaremos un Bot para responder sus dudas y en caso de no poder asistirlo un técnico se comunicará por este Chat.
+
+      Oprima alguno de los siguientes botones o bien describa su problema y quizas pueda ayudarlo más rápido.
+  utter_intro_buttons:
+  - text: ''
+    quick_replies:
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+    - title: Quiero mas info sobre Telemedicina
+      playload: /quiero_info_telemedicina
+  utter_quiero_info_telemedicina:
+  - text: |-
+      Telemedicina cuenta con médicos....
+
+      Los turnos tienen asignada una franja de 20 minutos que son más que suficientes para resolver tus dudas o elevar tu problema a un turno presencial cercano.
+  utter_quiero_info_telemedicina_buttons:
+  - text: ''
+    quick_replies:
+    - title: ¿Qué obras sociales están vinculadas?
+      playload: /que_obras_sociales
+    - title: ¿Qué pasa si me ausento?
+      playload: /me_ausento
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+  utter_que_obras_sociales:
+  - text: |-
+      PAMI
+      OSDE
+      UOM
+  utter_que_obras_sociales_buttons:
+  - text: ''
+    quick_replies:
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+    - title: ¿Qué pasa si no tengo una obra social vinculada?
+      playload: /fuera_del_padron
+  utter_fuera_del_padron:
+  - text: |-
+      En caso de no tener una Obra Social vinculada: ¡No pasa nada!
+
+      El costo de la consulta es de $800 y podrás ver a un General de manera virtual.
+  utter_fuera_del_padron_buttons:
+  - text: ''
+    quick_replies:
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+    - title: Métodos de pago
+      playload: /metodos_de_pago
+    - title: Tengo otra duda
+      playload: /otra_duda
+  utter_metodos_de_pago:
+  - text: Tendrá disponible en la página para agendar turno, un link de MercadoPago desde el cual podrá abonar con cualquier tarjeta
+  utter_metodos_de_pago_buttons:
+  - text: ''
+    quick_replies:
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+    - title: Volver al inicio
+      playload: /intro
+    - title: Tengo otra duda
+      playload: /otra_duda
+  utter_otra_duda:
+  - text: |-
+      🕵️‍♂️ No se preocupe! En instantes un técnico responderá su duda particular, puede ir dejándola escrita en este chat. También puede seleccionar alguna de las siguientes opciones para seguir operando con el Bot 🤖. 
+
+      😢 Recuerde que la respuesta no será inmediata, rogamos tenga paciencia.
+  utter_otra_duda_buttons:
+  - text: ''
+    quick_replies:
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+    - title: Volver al inicio
+      playload: /intro
+  utter_me_ausento:
+  - text: Deberá avisar al menos 6hs antes del turno o bien el costo no será devuelto y bla
+  utter_me_ausento_buttons:
+  - text: ''
+    quick_replies:
+    - title: ¿Qué obras sociales están vinculadas?
+      playload: /que_obras_sociales
+    - title: Quiero agendar un turno
+      playload: /quiero_agendar_un_turno
+  utter_quiero_agendar_un_turno:
+  - text: |-
+      Para agendar un turno usted debe tener completas cuatro instancias:
+      - Registrarse o Iniciar Sesion en https://paciente-basa.doctari.com/
+      - Buscar al médico que desea que lo atienda, o al primer médico de "Medicina General"
+      - "Agendar" en el turno más próximo o bien "Ver otras horas disponibles"
+      - Completar los datos y adjuntar estudios si los tiene
+
+      Nota: Si usted tiene alguna de nuestras obras sociales vinculadas tendrá un descuento o verá bonificada la consulta. Si debe tenerlo y no lo tiene bonificado, verifique las obras sociales en las siguientes opciones.
+  utter_quiero_agendar_un_turno_buttons:
+  - text: ''
+    quick_replies:
+    - title: ¿Qué obras sociales están vinculadas?
+      playload: /que_obras_sociales
+    - title: Volver al inicio
+      playload: /intro
+  utter_goodbye:
+  - text: Hasta pronto!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- utter_fuera_del_padron
+- utter_fuera_del_padron_buttons
+- utter_goodbye
+- utter_intro
+- utter_intro_buttons
+- utter_me_ausento
+- utter_me_ausento_buttons
+- utter_metodos_de_pago
+- utter_metodos_de_pago_buttons
+- utter_otra_duda
+- utter_otra_duda_buttons
+- utter_que_obras_sociales
+- utter_que_obras_sociales_buttons
+- utter_quiero_agendar_un_turno
+- utter_quiero_agendar_un_turno_buttons
+- utter_quiero_info_telemedicina
+- utter_quiero_info_telemedicina_buttons

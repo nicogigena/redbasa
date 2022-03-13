@@ -1,0 +1,10 @@
+[
+  {
+    "text": "me_ausento",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "quiero_agendar_un_turno",
+      "confidence": 0.0028492799028754234
+    }
+  }
+]

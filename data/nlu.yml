@@ -1,0 +1,130 @@
+version: "3.0"
+nlu:
+- intent: intro
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hola
+    - intro
+    - Volver al inicio
+- intent: quiero_agendar_un_turno
+  examples: |
+    - quiero agendar un turno
+    - queria saber sobre turnos
+    - quiero_agendar_un_turno
+    - 1
+    - Quiero agendar un turno
+- intent: quiero_info_telemedicina
+  examples: |
+    - quiero saber mas sobre telemedicina
+    - quiero mas información sobre telemedicina
+    - que es telemedicina?
+    - quiero_info_telemedicina
+    - Quiero mas info sobre Telemedicina
+- intent: fuera_del_padron
+  examples: |
+    - No esta mi obra social
+    - No esta incluida
+    - fuera_del_padron
+    - ¿Que pasa si no tengo una obra social vinculada?
+- intent: que_obras_sociales
+  examples: |
+    - Mi obra social
+    - Esta incluido
+    - PAMI
+    - UOM
+    - OSDE
+    - que_obras_sociales
+    - Tengo pami, puedo acceder?
+    - Que obra social me lo cubre?
+    - ¿Que obras sociales estan vinculadas?
+    - Soy socia de PAMI
+- intent: me_ausento
+  examples: |
+    - que pasa si no voy
+    - cancelar turno
+    - no puedo ir
+    - me_ausento
+- intent: metodos_de_pago
+  examples: |
+    - pagar
+    - abonar
+    - abono
+    - pago
+    - honorarios
+    - metodo de pago
+    - metodos_de_pago
+    - quiero pagar
+- intent: otra_duda
+  examples: |
+    - tengo otra duda
+    - quiero hablar con una persona
+    - no resuelve mi pregunta
+    - no me sirve
+    - otra_duda
+    - Tengo otra duda
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: nlu_fallback
+  examples: |
+    - me_ausento

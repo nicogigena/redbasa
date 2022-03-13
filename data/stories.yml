@@ -1,0 +1,183 @@
+version: "3.0"
+stories:
+
+
+
+- story: interactive_story_1
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina_buttons
+
+- story: interactive_story_1
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+
+- story: interactive_story_1
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: metodos_de_pago
+  - action: utter_metodos_de_pago
+  - action: utter_metodos_de_pago_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina_buttons
+  - intent: me_ausento
+  - action: utter_me_ausento
+  - action: utter_me_ausento_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: metodos_de_pago
+  - action: utter_metodos_de_pago
+  - action: utter_metodos_de_pago_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: otra_duda
+  - action: utter_otra_duda
+  - action: utter_otra_duda_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: metodos_de_pago
+  - action: utter_metodos_de_pago
+  - action: utter_metodos_de_pago_buttons
+  - intent: otra_duda
+  - action: utter_otra_duda
+  - action: utter_otra_duda_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+
+- story: interactive_story_1
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina
+  - action: utter_quiero_info_telemedicina_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: fuera_del_padron
+  - action: utter_fuera_del_padron
+  - action: utter_fuera_del_padron_buttons
+  - intent: otra_duda
+  - action: utter_otra_duda
+  - action: utter_otra_duda_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_buttons
+  - intent: que_obras_sociales
+  - action: utter_que_obras_sociales
+  - action: utter_que_obras_sociales_buttons
+  - intent: quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno
+  - action: utter_quiero_agendar_un_turno_buttons

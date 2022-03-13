@@ -1,0 +1,50 @@
+version: "3.0"
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+  - rule: "Saludo incial"
+    steps:
+    - intent: intro
+    - action: utter_intro
+    - action: utter_intro_buttons
+  - rule: "Quiero agendar"
+    steps:
+    - intent: quiero_agendar_un_turno
+    - action: utter_quiero_agendar_un_turno
+    - action: utter_quiero_agendar_un_turno_buttons  
+  - rule: "Quiero info Telemed"
+    steps:
+    - intent: quiero_info_telemedicina
+    - action: utter_quiero_info_telemedicina 
+    - action: utter_quiero_info_telemedicina_buttons
+  - rule: "Que OOSS"
+    steps:
+    - intent: que_obras_sociales
+    - action: utter_que_obras_sociales
+    - action: utter_que_obras_sociales_buttons
+  - rule: "OOSS no incluida"
+    steps:
+    - intent: fuera_del_padron
+    - action: utter_fuera_del_padron
+    - action: utter_fuera_del_padron_buttons
+  - rule: "Me ausento"
+    steps:
+    - intent: me_ausento
+    - action: utter_me_ausento
+    - action: utter_me_ausento_buttons
+  - rule: "Metodos de pago"
+    steps:
+    - intent: metodos_de_pago
+    - action: utter_metodos_de_pago
+    - action: utter_metodos_de_pago_buttons
+  - rule: "Otra duda"
+    steps:
+    - intent: otra_duda
+    - action: utter_otra_duda
+    - action: utter_otra_duda_buttons
